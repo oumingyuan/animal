@@ -18,7 +18,11 @@ from django.urls import path
 from django.conf.urls import url
 from animal.controller import HelloController
 
+from fish import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', HelloController.hello),
+
+    url(r'^information/', views.information_app),
 ]
