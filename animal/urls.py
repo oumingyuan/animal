@@ -18,7 +18,7 @@ from django.urls import path
 from django.conf.urls import url
 from animal.controller import HelloController
 
-from fish import views
+from fish.webservice import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
