@@ -18,11 +18,18 @@ from django.urls import path
 from django.conf.urls import url
 from animal.controller import HelloController
 
-from fish.webservice import views
+# from fish.webservice import views
+
+from fish import views as demo
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', HelloController.hello),
 
-    url(r'^information/', views.information_app),
+    url(r'^cat', HelloController.cat),
+
+    # url(r'^information/', views.information_app),
+
+    url(r'^sign_up', demo.sign_up),
+
 ]
