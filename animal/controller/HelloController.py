@@ -39,3 +39,9 @@ def hello(request):
     print(result)
 
     return HttpResponse("Hello world ! ")
+
+
+def cat(request):
+    """ 读取图片 """
+
+    return HttpResponse("Hello cat ! ")
